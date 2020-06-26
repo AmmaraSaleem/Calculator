@@ -1,0 +1,127 @@
+body{
+
+  background-image:  linear-gradient(rgba(226, 212, 21, 0.836),rgba(22, 230, 74, 0.904)); 
+    
+}
+#container{
+    width: 50%;
+    height: 530px;
+    
+    margin: 20px auto;
+}
+#calculator{
+    width: 320px;
+    height: 500px;
+    border-radius: 10px;
+    margin:  0 auto;
+    background-color: whitesmoke;
+    top: 20px;
+    box-shadow:  3px 4px 5px grey;
+    
+    position: relative;
+
+}
+.result{
+    width: 97%;
+    height: 50px;
+    border-radius: 50px;
+    background-color: gainsboro;
+    border: 1px solid gainsboro;
+    box-shadow: 2px 3px 5px gray;
+       margin-top: 5px;
+       font-size: 20px;
+       font-weight: bold;
+      
+    
+    
+}
+
+.op,.number,.empty
+{
+    width: 50px;
+    height: 40px;
+    margin: 15px;
+    float: left;
+    border-radius: 20px;
+    border-width: 0;
+    font-weight: bold;
+    font-size: 15px;
+  
+    
+
+}
+.clear,.backward
+{
+    width: 60px;
+    height: 40px;
+    border-radius: 20px;   
+    margin-top: 20px;
+    margin-left: 10px;
+    outline: 0;
+    cursor: pointer;
+}
+.red{
+    width: 20px;
+    height: 20px;   
+    background-color:red;
+     border: none;
+    border-radius: 20px;
+    margin-left: 50px;
+    outline: 0;
+}
+.yellow{
+    width: 20px;
+    height: 20px;   
+    background-color: yellow;
+    border: none;
+    border-radius: 20px;
+    margin-left: 20px;
+    outline: 0;
+}
+.green{
+    width: 20px;
+    height: 20px;   
+    border: none;
+    background-color:green;
+    border-radius: 20px;
+    margin-left: 20px;
+    outline: 0;
+}
+
+.number,.empty{
+    background-color: rgb(22, 177, 151);
+}
+.number,.op
+{
+    cursor: pointer;
+
+}
+.op:active,.number:active{
+    font-size: 12px;
+    
+}
+.op:focus,.number:focus,.empty:focus
+{
+    outline: 0;
+}
+@media screen and (max-width:600px)
+{
+    #container,.heading
+
+    {
+    width: 100%;
+    
+    }
+}
+.heading{
+    font-style: italic;
+    font-size: 30px;
+    color: indigo;
+    
+}
+.ans,.zero{
+    margin-left: 35px;
+    width: 100px;
+    background-color:gray;
+    }
+    

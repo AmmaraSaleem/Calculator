@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <center>
+        <div class="heading">
+            <h1>Calculator</h1>
+        </div>
+    </center>
+   
+        <div id="container">
+
+            <div id="calculator">
+
+                <input type="text" class="result" id="result">
+                <div id="keyboard">
+                    <div>
+
+
+                        <button class="clear" onclick="clearResult()">C</button>
+                        <button class="backward" onclick="backSpace()">CE</button>
+                        <button class="red"></button>
+                        <button class="yellow"></button>
+                        <button class="green"></button>
+
+
+
+                    </div>
+                    <div>
+
+                        <button class="op" style="background-color:rgb(241, 11, 88);" onclick="SR(getNumber)">x
+                            <sup>2</sup></button>
+                        <button class="op" style="background-color: rgb(148, 96, 231);"
+                            onclick="getNumber('.')">.</button>
+                        <button class="op" style="background-color:rgb(216, 100, 100);"
+                            onclick="getNumber('%')">%</button>
+                        <button class="op" style="background-color: red;" onclick="getNumber('+')"> +</button>
+
+
+                    </div>
+                    <div>
+
+                        <button class="number" onclick="getNumber('7')">7</button>
+                        <button class="number" onclick="getNumber('8')">8</button>
+                        <button class="number" onclick="getNumber('9')">9</button>
+                        <button class="op" style="background-color:greenyellow;"
+                            onclick="getNumber('*')">&times;</button>
+
+
+
+                    </div>
+                    <div>
+
+                        <button class="number" onclick="getNumber('4')">4</button>
+                        <button class="number" onclick="getNumber('5')">5</button>
+                        <button class="number" onclick="getNumber('6')">6</button>
+                        <button class="op" style="background-color:blue" onclick="getNumber('/')">&#247;</button>
+
+
+
+                    </div>
+                    <div>
+
+                        <button class="number" onclick="getNumber('1')">1</button>
+                        <button class="number" onclick="getNumber('2')">2</button>
+                        <button class="number" onclick="getNumber('3')">3</button>
+                        <button class="op" style="background-color: yellow" onclick="getNumber('-')">-</button>
+
+
+
+                    </div>
+
+                   
+
+
+                    <div>
+
+                        <button class="number zero" onclick="getNumber('0')">0</button>
+
+                        <button class="op ans" onclick="getResult()">=</button>
+
+
+
+                    </div>
+
+
+
+
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+        </div>
+
+   
+
+</body>
+<script src="app.js"></script>
+
+<script src="js/bootstrap.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+</html>
